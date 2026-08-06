@@ -5,100 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <style>
 
+        h1
+        {
+            background-color: darkred;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table, th, td
+        {
+
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+    </style>
 </head>
 <body>
-    
-    <style>
-        body {
-            background-color: #f3f7f4;
-          display: flex;
-          justify-content: center;
-          margin-top: 50px;
-          font-family: Arial, sans-serif;
-        }
-      
-        table {
-            width: 80%;
-    margin: auto;
 
-    border: 2px solid #3498db;
-    border-radius: 20px;
+    <h1>Aula 05 - Exemplo 1</h1>
 
-    overflow: hidden;
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,.2);
-
-    transition: .3s;
-          
-        }
-      
-        th, td {
-  
-            
-          padding: 12px 16px;
-          border-bottom: 1px solid #ddd;
-          text-align: left;
-        }
-      
-        th {
-          background: #f5f5f5;
-        }
-      
-        tr:hover {
-          background: #d3e7da;
-          cursor: pointer;
-        }
-
-        tr {
-            transition: 0.3s;
-        }
-
-        img {
-            width: 45px;
-            height: 30px;
-
-        
-        }
-
-      </style>
-
-    <h4 span style="color: #000000; margin:auto;">GRUPO C | Copa do Mundo </h4>
+    <h3>Exemplo de rowspan</h3>
 
     <table>
+
         <tr>
-            <th>Bandeira</th>
-            <th>Seleção</th>
-            <th>Classificação</th>
+            <th>Aula</th>
+            <th>Quarta-Feira</th>
+            <th>Quinta-Feira</th>
+            <th>Sexta-Feira</th>
+
         </tr>
 
         <tr>
-            <td><img src="BRASIL.jpg" alt=""></td>
-            <td>Brasil</td>
-            <td>1º</td>
+            <td>1ª Aula</td>
+            <td rowspan="2">AD/PA</td>
+            <td>Matemática</td>
+            <td>Química</td>
+
+
         </tr>
 
+        
         <tr>
-            <td><img src="Marrocos.png" alt=""></td>
-            <td>Marrocos</td>
-            <td>2º</td>
+            <td>2ª Aula</td>
+            <td>Português</td>
+            <td>Ed. Física</td>
+
+
         </tr>
 
+        
         <tr>
-            <td><img src="Flag_of_Scotland.png" alt=""></td>
-            <td>Escócia</td>
-            <td>3º</td>
+            <td>3ª Aula</td>
+            <td>Artes</td>
+            <td rowspan="2">IW1</td>
+            <td>Biologia</td>
+
+
         </tr>
 
+        
         <tr>
-            <td><img src="Flag_of_Haiti.png" alt=""></td>
-            <td>Haiti</td>
-            <td>4º</td>
+            <td>4ª Aula</td>
+            <td>Geografia</td>
+            <td>Ed. Física</td>
+
+
+
         </tr>
 
+        
+        <tr>
+            <td>5ª Aula</td>
+            <td rowspan="2">Inglês</td>
+            <td>Química</td>
+            <td rowspan="2">BD</td>
 
 
+        </tr>
+
+        
+        <tr>
+            <td>6ª Aula</td>
+            <td>Matemática</td>
+
+
+
+        </tr>
     </table>
     
 </body>
